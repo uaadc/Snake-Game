@@ -28,3 +28,15 @@ largura_tela = 800
 altura_tela = 600
 
 black = (0, 0, 0)
+#MARCUS ADICIONA TUA PARTE AQUI
+pygame.display.set_caption('Snake')
+clock = pygame.time.Clock()
+
+def botoes_menu_principal():
+    caixa1 = pygame.font.Font('freesansbold.ttf', 16).render('Jogar', True, black).get_rect()
+    texto1 = pygame.font.Font('freesansbold.ttf', 16).render('Jogar', True, black)
+    caixa1.center = (200, 475)
+
+    caixa2 = pygame.font.Font('freesansbold.ttf', 16).render('Configuracoes', True, black).get_rect()
+    texto2 = pygame.font.Font('freesansbold.ttf', 16).render('Configuracoes', True, black)
+    caixa2.center = (625, 475)
